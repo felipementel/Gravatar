@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <PackageId>Gravatar</PackageId>
+    <Version>1.0.0</Version>
+    <License>MIT</License>
+    <Authors>Felipe Augusto</Authors>
+    <Company>felipementel.dev.br</Company>
+    <PackageDescription>Extensions for Gravatar</PackageDescription>
+    <Description>Extensions for Gravatar</Description>
+    <RepositoryUrl>https://github.com/felipementel/Gravatar</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/felipementel/Gravatar</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>Gravatar</PackageTags>
+    <Title>Gravatar Extensions</Title>
+    <Summary>Extensions for Gravatar</Summary>
+  </PropertyGroup>
+
+</Project>
