@@ -13,7 +13,7 @@
     <RepositoryUrl>https://github.com/felipementel/Gravatar</RepositoryUrl>
     <PackageProjectUrl>https://github.com/felipementel/Gravatar</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>Gravatar</PackageTags>
+    <PackageTags>Gravatar-t5</PackageTags>
     <Title>Gravatar Extensions</Title>
     <Summary>Extensions for Gravatar</Summary>
   </PropertyGroup>
