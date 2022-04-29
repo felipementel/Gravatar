@@ -6,7 +6,7 @@
 
 
 ````powershell
-
+PS D:\Proj\Gravatar> dotnet new globaljson --sdk-version 6.0.202
 PS D:\Proj\Gravatar> dotnet new Gravatar
 PS D:\Proj\Gravatar> dotnet new classlib -o Gravatar
 PS D:\Proj\Gravatar> dotnet new mstest -o Gravatar.Test
