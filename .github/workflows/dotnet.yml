@@ -1,10 +1,13 @@
 name: Nuget
 
 on:
+  
   workflow_dispatch:
   push:
     branches:
       - main
+    paths-ignore:
+      - ./github/*
 
 defaults:
   run:
