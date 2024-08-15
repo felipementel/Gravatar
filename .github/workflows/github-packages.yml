@@ -1,0 +1,40 @@
+name: Upload dotnet package
+
+on:
+  release:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
+    
+defaults:
+  run:
+    working-directory: src
+    
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0.x'
+          source-url: https://nuget.pkg.github.com/felipementel/index.json
+        env:
+          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - run: dotnet build --configuration Release
+      - name: Create the package
+        run: dotnet pack --configuration Release
+      - name: Publish the package to GPR
+        run: dotnet nuget push bin/Release/*.nupkg
