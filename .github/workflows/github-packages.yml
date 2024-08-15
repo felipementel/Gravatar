@@ -3,6 +3,11 @@ name: Github Packages
 on:
   release:
     types: [created]
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - ./github/*
   workflow_dispatch:
     inputs:
       logLevel:
